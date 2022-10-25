@@ -1,5 +1,5 @@
 <template>
-  <div class="p-2 bg-white w-36 rounded">
+  <div class="p-2 bg-white w-40 rounded">
     <ul>
       <PinsSideBarItem text="最新" link="new">
         <template v-slot:activeIcon>

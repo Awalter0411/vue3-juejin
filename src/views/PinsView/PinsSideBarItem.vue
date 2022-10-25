@@ -1,7 +1,7 @@
 <template>
   <router-link :to="'/pins/' + link">
     <li
-      class="px-2 hover:bg-gray-200 transition-all hover:cursor-pointer flex h-10 items-center"
+      class="hover:text-blue-500 px-2 hover:bg-gray-200 transition-all hover:cursor-pointer flex h-10 items-center"
     >
       <template v-if="isActive">
         <slot name="activeIcon"></slot>
@@ -9,7 +9,7 @@
       <template v-else>
         <slot name="icon"></slot>
       </template>
-      <div>{{ text }}</div>
+      <div class="ml-2">{{ text }}</div>
     </li>
   </router-link>
 </template>
